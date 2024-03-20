@@ -82,17 +82,30 @@
         <!-- Page Heading -->
         <div class="d-sm-flex align-items-center justify-content-between mb-4">
           <h1 class="h3 mb-0 text-gray-800">UsersCRUD</h1>
-          <a href="<c:url value="/users/add.jsp"/>" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Dodaj użytkownika</a>
+          <a href="<c:url value="/users/list.jsp"/>" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Lista użytkowników</a>
         </div>
         <!-- Approach -->
         <div class="card shadow mb-4">
           <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary">Lista użytkowników</h6>
+            <h6 class="m-0 font-weight-bold text-primary">Dodaj użytkownika</h6>
+
+            <br>
+           <h6>Nazwa</h6>
+                <input type="text" name="nazwa" placeholder="Nazwa użytkownika">
+
+            <br><br>
+            <h6>E-mail</h6>
+                <input type="text" name="email" placeholder="E-mail użytkownika">
+
+            <br><br>
+            <h6>Hasło</h6>
+                <input type="text" name="haslo" placeholder="Hasło użytkownika">
           </div>
           <div class="card-body">
 
 
           </div>
+          <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Zapisz</a>
         </div>
 
         <!-- Content Row -->
