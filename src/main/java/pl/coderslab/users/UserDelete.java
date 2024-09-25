@@ -9,14 +9,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/user/list")
+@WebServlet("/user/delete")
+public class UserDelete extends HttpServlet {
 
-public class UserList extends HttpServlet {
-    @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         UserDao userDao = new UserDao();
-        req.setAttribute("users", userDao.WSZYSTKO());
-        getServletContext().getRequestDispatcher("/users/list.jsp").forward(req, resp);
-
+        userDao.delete(Integer.parseInt(request.getParameter("id")));
+        response.sendRedirect(request.getContextPath() + "/user/list");
     }
 }

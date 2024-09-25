@@ -1,5 +1,5 @@
 package pl.coderslab.entity;
-import org.mindrot.jbcrypt.BCrypt;
+
 
 public class User {
     private int id;
