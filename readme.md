@@ -1,26 +1,23 @@
 # CRUD Application for User Management
 
-## Opis projektu
+## Project Description
 
-Projekt ten to aplikacja CRUD (Create, Read, Update, Delete) do zarządzania użytkownikami, oparta na technologii Java i wykorzystująca serwlety oraz JSTL do wyświetlania danych na stronach JSP. Dane użytkowników są przechowywane w bazie danych MySQL z `workshop2`. Aplikacja umożliwia dodawanie, edytowanie, wyświetlanie szczegółów oraz usuwanie użytkowników.
+This project is a CRUD (Create, Read, Update, Delete) application for managing users, built with Java, and utilizing servlets and JSTL to display data on JSP pages. User data is stored in a MySQL database named `workshop2`. The application allows for adding, editing, viewing details, and deleting users.
 
-## Funkcjonalności
+## Features
 
-- **Tworzenie nowego użytkownika:** Formularz do wprowadzania nowych użytkowników.
-- **Wyświetlanie listy użytkowników:** Lista wszystkich użytkowników w bazie danych.
-- **Edytowanie użytkownika:** Możliwość edytowania istniejącego użytkownika.
-- **Usuwanie użytkownika:** Usunięcie użytkownika z bazy danych.
-- **Wyświetlanie szczegółów użytkownika:** Szczegóły wybranego użytkownika, takie jak ID, nazwa użytkownika, email.
+- Create a new user: A form for entering new users.
+- Display user list: A list of all users in the database.
+- Edit user: The ability to edit an existing user.
+- Delete user: Deleting a user from the database.
+- View user details: Detailed information about a selected user, such as ID, username, and email.
 
-## Wymagania
+## Requirements
 
 - Java 11
 - Apache Maven
-- MySQL 8.0 lub nowszy
-- Serwer aplikacji (np. Tomcat 9.0 lub nowszy)
+- MySQL 8.0 or later
+- Application server (e.g., Tomcat 9.0 or later)
 
-## Autorzy
-Projekt został stworzony przez Mateusza Maciejewskiego, w celu nauki i demonstracji możliwości wykorzystania serwletów, JSTL oraz bazy danych MySQL do budowy aplikacji CRUD.
-
-## Licencja
-Projekt jest licencjonowany na podstawie licencji MIT.
+## License
+This project is licensed under the MIT License.
